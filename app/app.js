@@ -1,5 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Hello from './Hello';
+import Table from './Table';
 
-render(<Hello />, document.getElementById('root'));
+console.time('table render');
+render(<Table size="500" />, document.getElementById('root'));
+console.timeEnd('table render');
